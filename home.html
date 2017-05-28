@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-fab center middle>
+ <button ion-fab color="danger"><ion-icon name="home"></ion-icon></button>
+<ion-fab-list side="top">
+<ion-fab>
+<button ion-fab  color="primary"><ion-icon name="logo-vimeo"></ion-icon></button><ion-fab-list side="top">
+  <button ion-feb mini><ion-icon name="logo-facebook"></ion-icon></button>
+  <button ion-feb mini><ion-icon name="logo-twitter"></ion-icon></button>
+  <button ion-feb mini><ion-icon name="logo-vimeo"></ion-icon></button>
+  <button ion-feb mini><ion-icon name="logo-googleplus"></ion-icon></button></ion-fab-list>
+</ion-fab>
+</ion-fab-list>
+<ion-fab-list side="bottom">
+<button ion-fab (click)="  showAlert()" color="secondary"><ion-icon name="logo-facebook"></ion-icon></button></ion-fab-list>
+<ion-fab-list side="left">
+<button ion-fab (click)="presentToast()" (click)="secondPage()" color="light"><ion-icon name="logo-googleplus"></ion-icon></button></ion-fab-list>
+<ion-fab-list side="right">
+<button ion-fab color="secondary"  ><ion-icon name="logo-twitter" (pan)="panEvent($event)"></ion-icon>
+ {{pan}}
+  </button>
+  </ion-fab-list>
+  </ion-fab >
+</ion-content>
